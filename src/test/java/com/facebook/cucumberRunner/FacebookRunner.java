@@ -8,10 +8,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-plugin={"pretty" ,"html:target/facebookReport.html"},
+plugin={"pretty" ,"html:report/facebookReport.html"},
 
 features="src/test/resources/features",
 glue="com.facebook.stepDefinations",
+tags="@common",
 snippets=SnippetType.CAMELCASE
 		
 		)
